@@ -6,34 +6,81 @@
 </head>
 <body>
 <h1 style="text-align:left">
-    <span style="font-weight:normal">Battersea Barge maps:</span>
+    <span>Battersea Barge maps:</span>
     
 </h1>
-<p> Upper deck </p>
+<h1> Upper deck </h1>
 <p>
-<canvas id="myCanvasUpper" width="710" height="350" style="border:1px solid grey"></canvas>
+<canvas id="myCanvasUpper" width="710" height="350" style="float:left"></canvas>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </p>
 </p>
 
-<p> Mid deck </p>
+<h1> Mid deck </h1>
 <p>
-<canvas id="myCanvasMid" width="710" height="350" style="border:1px solid grey"></canvas>
+<canvas id="myCanvasMid" width="710" height="350" style="float:left"></canvas>
+<p><br><br><br>Appliances on Mid Deck:<br>
+        T - Speaker 1<br>
+        U - Speaker 2<br>
+        V - Speaker 3<br>
+        W - Speaker 4<br>
+        X - Speaker 5<br>
+        Y - Speaker 6<br><br>
+        Appliances in Bar:<br>
+        Z - iPad(8th Gen)<br>
+        AA - card machine 1<br>
+        AB - card machine 2<br>
+        AC - Coffee grinder<br>
+        AD - Coffee Machine<br>
+        AE - Ice Machine<br>
+        AF - Glasswasher<br>
+        AG - Printer<br>
+        AH - Laptop 1<br>
+        AI - Laptop 2<br>
+        AJ - Laptop 3 <br>
+        AK - Cocktail Cooler<br>
+        <br><br><br><br><br><br>
+</p>
 </p>
 
-<p> Lower deck </p>
+<h1> Lower deck </h1>
 <p>
-<canvas id="myCanvasLower" width="710" height="350" style="border:1px solid grey"></canvas>
+<canvas id="myCanvasLower" width="710" height="350" style="float:left"></canvas>
+<p><br><br><br>Appliances in Kitchen:<br>
+        A - Freezer 1<br>
+        B - Fridge 1<br>
+        C - Fridge 2<br>
+        D - Freezer 2<br>
+        E - Pizza Oven<br>
+        F - Led Insect catcher<br>
+        G - Television<br>
+        H - Bread Toaster<br>
+        I - Washing Machine<br>
+        J - Cooler 1<br>
+        K - Deep Fryer <br>
+        L - Cooler 2 <br>
+        M - Fridge 3<br>
+        N - Led Insect catcher<br><br>
+        Appliances on Lower Deck:<br>
+        O - Speaker 1<br>
+        P - Speaker 2<br>
+        Q - Woofer 1<br>
+        R - Woofer 2<br>
+        S - Audio Control Unit<br>
+        <br><br><br><br><br><br>
+</p>
 </p>
 
 <script>
 const canvasUpper = document.getElementById("myCanvasUpper");
 const ctxUpper = canvasUpper.getContext("2d");
-canvasUpper.width = 710;
-canvasUpper.height = 350;
+canvasUpper.width = 1070;
+canvasUpper.height = 520;
 //Draw the map
 const imgUpper = new Image();
-imgUpper.src = "/Picture maps boats/UpperDeckBB.jpg";
+imgUpper.src = "/Picture maps boats/UpperDeckBB1.png";
 imgUpper.addEventListener("load", function(){
-    ctxUpper.drawImage(imgUpper,10,10, 691,313);
+    ctxUpper.drawImage(imgUpper,10,10, 1030,500);
 });
 
 canvasUpper.addEventListener("click", function(event){
@@ -47,13 +94,13 @@ canvasUpper.addEventListener("click", function(event){
 
 const canvasMid = document.getElementById("myCanvasMid");
 const ctxMid = canvasMid.getContext("2d");
-canvasMid.width = 710;
-canvasMid.height = 350;
+canvasMid.width = 1070;
+canvasMid.height = 520;
 //Draw the map
 const imgMid = new Image();
-imgMid.src = "/Picture maps boats/MidDeckBB.jpg";
+imgMid.src = "/Picture maps boats/MidDeckBB1.png";
 imgMid.addEventListener("load", function(){
-    ctxMid.drawImage(imgMid,10,10, 689,276);
+    ctxMid.drawImage(imgMid,10,10, 1030,500);
 });
 
 canvasMid.addEventListener("click", function(event){
@@ -67,13 +114,13 @@ canvasMid.addEventListener("click", function(event){
 
 const canvasLower = document.getElementById("myCanvasLower");
 const ctxLower = canvasLower.getContext("2d");
-canvasLower.width = 710;
-canvasLower.height = 350;
+canvasLower.width = 1070;
+canvasLower.height = 520;
 //Draw the map
 const imgLower = new Image();
-imgLower.src = "/Picture maps boats/LowerDeckBB.jpg";
+imgLower.src = "/Picture maps boats/LowerDeckBB1.png";
 imgLower.addEventListener("load", function(){
-    ctxLower.drawImage(imgLower,10,10, 696,242);
+    ctxLower.drawImage(imgLower,10,10, 1030,500);
 });
 
 canvasLower.addEventListener("click", function(event){

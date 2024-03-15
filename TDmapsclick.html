@@ -6,34 +6,88 @@
 </head>
 <body>
 <h1 style="text-align:left">
-    <span style="font-weight:normal">Tamesis Dock maps:</span>
+    <span >Tamesis Dock maps:</span>
     
 </h1>
-<p> Upper deck </p>
+<h1> Upper deck </h1>
 <p>
-<canvas id="myCanvasUpper" width="710" height="350" style="border:1px solid grey"></canvas>
+    <canvas id="myCanvasUpper" width="710" height="350" style="float:left" ></canvas>
+    <p><br><br><br><br>Appliances on Upper Deck:<br>
+                AJ - Ice Machine 2<br>
+                AK - Mini Speaker 1<br>
+                AL - Mini Speaker 2<br>
+                AM - Cooler<br>
+                AN - Cooler (under Bar)<br>
+                AO - Cooler<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </p>
 </p>
+<br>
+<h1> Mid deck </h1>
+<p>
+<canvas id="myCanvasMid" width="710" height="350" style="float:left"></canvas>
+<p><br><br><br><br>Appliances in Bar:<br>
+        S - Coffee Machine<br>
+        T - Coffee Grinder<br>
+        U - iPad1<br>
+        V - iPad2<br>
+        W - Card Machine 1<br>
+        X - Card Machine 2<br>
+        Y - Cooler<br> <br>
+        Appliances in Glasswasher Room:<br>
+        Z - Ice Machine<br>
+        AA - Glasswasher<br>
+        AB - LED Insect Killer<br><br>
+        Appliances in Back Room / Office/ Spirit Room<br>
+        AD- Washing Machine<br>
+        AE - Bar Freezer<br>
+        AF - Monitor (in office)<br> <br>
+        Appliances on Mid Deck<br>
+        AG - PA System<br>
+        AH - Speaker 1<br>
+        AI - Speaker 2<br>
+        <br><br><br>
+</p>
+</p>
+<br>
 
-<p> Mid deck </p>
+<h1> Lower deck </h1>
 <p>
-<canvas id="myCanvasMid" width="710" height="350" style="border:1px solid grey"></canvas>
+<canvas id="myCanvasLower" width="710" height="350" style="float:left"></canvas>
+<p><br><br><br>Appliances in Kitchen:<br>
+        A - Refrigerator A<br>
+        B - Refrigerator B<br>
+        C - Refrigerator C<br>
+        D - Refrigerator D<br>
+        E - Freezer<br>
+        F - Dishwasher<br>
+        G - Microwave<br>
+        H - Oven<br>
+        I - Food Dryer<br>
+        J - Hand-held Blender<br>
+        K - Dough Mixer<br>
+        L - LED Insect Killer<br><br>
+        Appliances on Lower Deck:<br>
+        M - Speaker 3<br>
+        N - Subwoofer 1 <br>
+        O - Television<br>
+        P - Subwoofer 2<br>
+        Q - LED Insect Killer<br>
+        R - Cooler<br>
+        <br><br><br><br><br><br>
 </p>
-
-<p> Lower deck </p>
-<p>
-<canvas id="myCanvasLower" width="710" height="350" style="border:1px solid grey"></canvas>
 </p>
+<br>
 
 <script>
 const canvasUpper = document.getElementById("myCanvasUpper");
 const ctxUpper = canvasUpper.getContext("2d");
-canvasUpper.width = 710;
-canvasUpper.height = 350;
+canvasUpper.width = 1070;
+canvasUpper.height = 520;
 //Draw the map
 const imgUpper = new Image();
-imgUpper.src = "/Picture maps boats/OutsideDeckTD.png";
+imgUpper.src = "/Picture maps boats/UpperDeckTD1.png";
 imgUpper.addEventListener("load", function(){
-    ctxUpper.drawImage(imgUpper,10,10, 691,313);
+    ctxUpper.drawImage(imgUpper,10,10, 1060,510);
 });
 
 canvasUpper.addEventListener("click", function(event){
@@ -47,13 +101,13 @@ canvasUpper.addEventListener("click", function(event){
 
 const canvasMid = document.getElementById("myCanvasMid");
 const ctxMid = canvasMid.getContext("2d");
-canvasMid.width = 710;
-canvasMid.height = 350;
+canvasMid.width = 1070;
+canvasMid.height = 520;
 //Draw the map
 const imgMid = new Image();
-imgMid.src = "/Picture maps boats/MidDeckTD.png";
+imgMid.src = "/Picture maps boats/MidDeckTD1.png";
 imgMid.addEventListener("load", function(){
-    ctxMid.drawImage(imgMid,10,10, 689,276);
+    ctxMid.drawImage(imgMid,10,10, 1060,510);
 });
 
 canvasMid.addEventListener("click", function(event){
@@ -67,13 +121,13 @@ canvasMid.addEventListener("click", function(event){
 
 const canvasLower = document.getElementById("myCanvasLower");
 const ctxLower = canvasLower.getContext("2d");
-canvasLower.width = 710;
-canvasLower.height = 350;
+canvasLower.width = 1070;
+canvasLower.height = 520;
 //Draw the map
 const imgLower = new Image();
-imgLower.src = "/Picture maps boats/LowerDeckTD.png";
+imgLower.src = "/Picture maps boats/LowerDeckTD1.png";
 imgLower.addEventListener("load", function(){
-    ctxLower.drawImage(imgLower,10,10, 696,242);
+    ctxLower.drawImage(imgLower,10,10, 1060,510);
 });
 
 canvasLower.addEventListener("click", function(event){

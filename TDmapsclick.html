@@ -9,6 +9,9 @@
     <span >Tamesis Dock maps:</span>
     
 </h1>
+<table>
+
+<tr>
 <h1> Upper deck </h1>
 <p>
     <canvas id="myCanvasUpper" width="710" height="350" style="float:left" ></canvas>
@@ -22,6 +25,8 @@
     </p>
 </p>
 <br>
+</tr>
+<tr>
 <h1> Mid deck </h1>
 <p>
 <canvas id="myCanvasMid" width="710" height="350" style="float:left"></canvas>
@@ -49,7 +54,8 @@
 </p>
 </p>
 <br>
-
+</tr>
+<tr>
 <h1> Lower deck </h1>
 <p>
 <canvas id="myCanvasLower" width="710" height="350" style="float:left"></canvas>
@@ -77,6 +83,8 @@
 </p>
 </p>
 <br>
+</tr>
+</table>
 
 <script>
 const canvasUpper = document.getElementById("myCanvasUpper");
@@ -94,6 +102,7 @@ canvasUpper.addEventListener("click", function(event){
     let x = event.offsetX;
     let y = event.offsetY;
     ctxUpper.fillStyle = "red";
+    ctxUpper.beginPath();
     ctxUpper.arc(x,y,5,0,Math.PI*2);
     ctxUpper.fill();
     ctxUpper.stroke();
@@ -114,6 +123,7 @@ canvasMid.addEventListener("click", function(event){
     let x = event.offsetX;
     let y = event.offsetY;
     ctxMid.fillStyle = "red";
+    ctxMid.beginPath();
     ctxMid.arc(x,y,5,0,Math.PI*2);
     ctxMid.fill();
     ctxMid.stroke();
@@ -134,6 +144,7 @@ canvasLower.addEventListener("click", function(event){
     let x = event.offsetX;
     let y = event.offsetY;
     ctxLower.fillStyle = "red";
+    ctxLower.beginPath();
     ctxLower.arc(x,y,5,0,Math.PI*2);
     ctxLower.fill();
     ctxLower.stroke();
